@@ -1,8 +1,8 @@
 
-const FilterableProductTable = () => {
+const FilterableProductTable = ({ children }) => {
   return (
-    <div>
-      FilterableProductTable
+    <div className="inputTable">
+      {children}
     </div>
   )
 }

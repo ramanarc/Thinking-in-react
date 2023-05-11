@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 
+.inputTable{
+  background-color: #fff;
+  border: 1px solid #F4F4F5;
+  border-radius: 6px;
+  width: 60%;
+  margin: auto;
+}
+
+.search-bar{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
+.checkbox-wrapper{
+  margin: 10px auto;
+}
+.checkbox-wrapper input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+
+/* CSS RESET */
 */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -9,8 +36,10 @@
   margin: 0;
 }
 html, body {
-  min-height: 100%;
   font-family: 'Inter', sans-serif;
+  min-height: 100%;
+  background-color: #E4E4E7;
+
 }
 body {
   line-height: 1.5;
