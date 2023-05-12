@@ -1,7 +1,7 @@
 
 const FilterableProductTable = ({ children }) => {
   return (
-    <div className="inputTable">
+    <div>
       {children}
     </div>
   )

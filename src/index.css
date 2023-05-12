@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 
-.inputTable{
-  background-color: #fff;
-  border: 1px solid #F4F4F5;
-  border-radius: 6px;
-  width: 60%;
-  margin: auto;
-}
 
 .search-bar{
   display: flex;
