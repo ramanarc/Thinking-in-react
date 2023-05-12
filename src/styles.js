@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 
-
 export const Table = styled.div`
   background-color: #fff;
   border: 1px solid #F4F4F5;
@@ -17,7 +16,7 @@ export const SearchContainer = styled.div`
   width: 100%;
 `
 
-export const ProductTable = styled.div`
+export const ProductTableStyle = styled.div`
   height: 100%;
   background-color: #F4F4F5;
   display: block;

@@ -2,45 +2,21 @@ import { useState } from 'react'
 import './App.css'
 import FilterableProductTable from './components/FilterableProductTable'
 import SearchBar from './components/SearchBar'
-import { Table, ProductTable, SearchContainer, HStack } from './styles';
 
 
 function App() {
 
-  return (
-    <>
-      <Table>
-        <FilterableProductTable>
-          <SearchBar />
-        </FilterableProductTable>
-        <ProductTable>
-          <HStack>
-            <h4>Name</h4>
-            <h4>Price</h4>
-          </HStack>
-          <h2>FRUITS</h2>
-          <HStack>
-            <p>Apple</p>
-            <p>$1</p>
-          </HStack>
-          <HStack>
-            <p>Mango</p>
-            <p>$1</p>
-          </HStack>
-          <h2>VEGETABLES</h2>
-          <HStack>
-            <p>Leafy</p>
-            <p>$4</p>
-          </HStack>
-          <HStack>
-            <p>Cabbage</p>
-            <p>$10</p>
-          </HStack>
-        </ProductTable>
-      </Table>
+  const PRODUCTS = [
+    { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
+    { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
+    { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
+    { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
+    { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
+    { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
+  ];
 
-    </>
-  )
+  return <FilterableProductTable products={PRODUCTS} />
+
 }
 
 export default App

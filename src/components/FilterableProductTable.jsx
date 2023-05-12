@@ -1,8 +1,11 @@
+import SearchBar from "./SearchBar"
+import ProductTable from "./ProductTable"
 
-const FilterableProductTable = ({ children }) => {
+const FilterableProductTable = ({ products }) => {
   return (
     <div>
-      {children}
+      <SearchBar />
+      <ProductTable products={products} />
     </div>
   )
 }
