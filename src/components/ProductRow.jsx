@@ -5,17 +5,20 @@ import { HStack } from '../styles'
 const ProductRow = ({ products }) => {
 
   const inlineStyle = {
-    flexGrow: 1
+    flexGrow: 1,
   }
+
+  const inlineTextStyle = {
+    color: '#DC2626'
+  }
+
   //if stocked true normal, if false (red)
 
   return (
     <>
       {products.map((product) =>
-        <HStack>
-          <div styles={inlineStyle}>
-            {product.name}
-          </div>
+        <HStack key={product.name}>
+          <p style={inlineTextStyle}>{product.name}</p>
           {product.price}
         </HStack>)}
     </>
