@@ -3,10 +3,11 @@ import ListGroup from './components/ListGroup'
 
 
 function App() {
+  const cities = ['New York', 'San Francisco', 'Tel Aviv', 'Italy', 'Mumbai', 'Paris']
 
   return (
     <>
-      <ListGroup />
+      <ListGroup heading='City names' items={cities} />
     </>
   )
 

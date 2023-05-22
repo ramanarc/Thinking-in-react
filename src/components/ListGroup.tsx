@@ -1,15 +1,19 @@
 import React, { useState } from "react"
 import { MouseEvent } from "react"
 
-const ListGroup = () => {
+interface Props {
+  heading: string;
+  cities: string[];
+}
 
-  const cities = ['New York', 'San Francisco', 'Tel Aviv', 'Italy', 'Mumbai', 'Paris']
+
+const ListGroup = ({ heading, cities }: Props) => {
 
   const [selectedIndex, setSelectedIndex] = useState(-1); //would go from -1 to the index of clicked item
 
   return (
     <div className='m-4'>
-      <h2>List</h2>
+      <h2>{heading}</h2>
       <ul className="list-group">
         {cities.map((city, index) => <li
           onClick={() => setSelectedIndex(index)}
