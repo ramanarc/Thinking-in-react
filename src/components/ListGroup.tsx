@@ -1,16 +1,16 @@
 import React from "react"
 
 const ListGroup = () => {
+
+  const cities = ['New York', 'San Francisco', 'Tel Aviv', 'Italy', 'Mumbai', 'Paris']
+
   return (
-    <>
+    <div className='m-4'>
+      <h2>List</h2>
       <ul className="list-group">
-        <li className="list-group-item">An item</li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
+        {cities.map((city) => <li onClick={() => console.log(city)} key={city} className="list-group-item">{city}</li>)}
       </ul>
-    </>
+    </div>
   )
 }
 
