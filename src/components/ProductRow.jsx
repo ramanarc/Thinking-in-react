@@ -4,10 +4,6 @@ import { HStack } from '../styles'
 
 const ProductRow = ({ products }) => {
 
-  const inlineStyle = {
-    flexGrow: 1,
-  }
-
   const inlineTextStyle = {
     color: '#DC2626'
   }
